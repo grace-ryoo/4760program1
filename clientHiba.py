@@ -21,10 +21,5 @@ def start_client(host='127.0.0.1', port=5001):
         print(f"Sum: {client_number + server_number}")
 
 if __name__ == "__main__":
-    choice = input("Start as (server/client): ").strip().lower()
-    if choice == "server":
-        start_server()
-    elif choice == "client":
+    choice = input("Start as client: ").strip().lower()
         start_client()
-    else:
-        print("Invalid choice. Use 'server' or 'client'.")
